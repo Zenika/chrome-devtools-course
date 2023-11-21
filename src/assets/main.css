@@ -1,4 +1,4 @@
-@import url('https://fonts.cdnfonts.com/css/8bit-wonder');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import './base.css';
 @import "./utils.css";
 
@@ -10,15 +10,14 @@
   font-weight: normal;
 }
 
-a,
-.green {
+a {
   text-decoration: none;
-  color: var(--color-green);
+  color: var(--color-secondary);
   transition: 0.4s;
 }
 
 @media (hover: hover) {
   a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
+    background-color: rgba(194,88,114, 0.1);
   }
 }

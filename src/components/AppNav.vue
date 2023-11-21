@@ -5,15 +5,15 @@ import { RouterLink } from 'vue-router'
 <template>
   <div class="wrapper">
     <nav>
-      <RouterLink to="/elements">Elements</RouterLink>
-      <RouterLink to="/console">Console</RouterLink>
-      <RouterLink to="/sources">Sources</RouterLink>
-      <RouterLink to="/network">Network</RouterLink>
-      <RouterLink to="/performances">Performance</RouterLink>
-      <RouterLink to="/memory">Memory</RouterLink>
-      <RouterLink to="/application">Application</RouterLink>
-      <RouterLink to="/lighthouse">Lighthouse</RouterLink>
-      <RouterLink to="/more">More Tools</RouterLink>
+      <RouterLink to="/elements" class="router-link">Elements</RouterLink>
+      <RouterLink to="/console" class="router-link">Console</RouterLink>
+      <RouterLink to="/sources" class="router-link">Sources</RouterLink>
+      <RouterLink to="/network" class="router-link">Network</RouterLink>
+      <RouterLink to="/performances" class="router-link">Performance</RouterLink>
+      <RouterLink to="/memory" class="router-link">Memory</RouterLink>
+      <RouterLink to="/application" class="router-link">Application</RouterLink>
+      <RouterLink to="/lighthouse" class="router-link">Lighthouse</RouterLink>
+      <RouterLink to="/more" class="router-link">More Tools</RouterLink>
     </nav>
   </div>
 </template>
@@ -21,7 +21,6 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 .wrapper {
   width: 280px;
-  border-right: 1px solid var(--color-border);
   margin-right: 32px;
   padding-right: 48px;
 }
@@ -34,6 +33,7 @@ nav {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  border-right: 1px solid var(--color-border);
 }
 
 nav a {
@@ -41,7 +41,7 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-green);
+  color: var(--color-secondary);
 }
 
 nav a.router-link-exact-active:hover {
@@ -51,6 +51,6 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+  //border-left: 1px solid var(--color-border);
 }
 </style>
