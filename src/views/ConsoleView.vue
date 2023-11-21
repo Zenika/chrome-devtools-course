@@ -1,5 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <p>Welcome here !</p>
+  <h2>CONSOLE</h2>
 </template>
+
+<style scoped></style>
