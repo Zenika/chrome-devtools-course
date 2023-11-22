@@ -20,16 +20,15 @@ import { RouterLink } from 'vue-router'
 
 <style scoped>
 .wrapper {
-  width: 280px;
+  max-width: 280px;
   margin-right: 32px;
-  padding-right: 48px;
 }
 
 nav {
   width: 100%;
   text-align: left;
   font-size: 1rem;
-  padding: 1rem 0;
+  padding: 1rem 1.2rem 1rem 0;
   display: flex;
   flex-direction: column;
   gap: 24px;

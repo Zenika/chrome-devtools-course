@@ -9,3 +9,11 @@
 .flex {
   display: flex;
 }
+
+.align-center {
+  align-items: center;
+}
+
+.code-snippet {
+  border-radius: 12px;
+}
