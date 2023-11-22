@@ -5,12 +5,12 @@ import { RouterLink } from 'vue-router'
 <template>
   <div class="wrapper">
     <nav>
+      <RouterLink to="/" class="router-link">Home</RouterLink>
       <RouterLink to="/elements" class="router-link">Elements</RouterLink>
       <RouterLink to="/console" class="router-link">Console</RouterLink>
       <RouterLink to="/sources" class="router-link">Sources</RouterLink>
       <RouterLink to="/network" class="router-link">Network</RouterLink>
-      <RouterLink to="/performances" class="router-link">Performance</RouterLink>
-      <RouterLink to="/memory" class="router-link">Memory</RouterLink>
+      <RouterLink to="/performance" class="router-link">Performance</RouterLink>
       <RouterLink to="/application" class="router-link">Application</RouterLink>
       <RouterLink to="/lighthouse" class="router-link">Lighthouse</RouterLink>
       <RouterLink to="/more" class="router-link">More Tools</RouterLink>

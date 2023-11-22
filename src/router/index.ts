@@ -2,6 +2,12 @@ import { createRouter, createWebHistory } from 'vue-router'
 import ElementsView from '@/views/ElementsView.vue'
 import ConsoleView from '@/views/ConsoleView.vue'
 import HomeView from '@/views/HomeView.vue'
+import SourcesView from '@/views/SourcesView.vue'
+import NetworkView from '@/views/NetworkView.vue'
+import PerformanceView from '@/views/PerformanceView.vue'
+import ApplicationView from '@/views/ApplicationView.vue'
+import LighthouseView from '@/views/LighthouseView.vue'
+import MoreToolsView from '@/views/MoreToolsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -20,6 +26,36 @@ const router = createRouter({
       path: '/console',
       name: 'console',
       component: ConsoleView
+    },
+    {
+      path: '/sources',
+      name: 'sources',
+      component: SourcesView
+    },
+    {
+      path: '/network',
+      name: 'network',
+      component: NetworkView
+    },
+    {
+      path: '/performance',
+      name: 'performance',
+      component: PerformanceView
+    },
+    {
+      path: '/application',
+      name: 'application',
+      component: ApplicationView
+    },
+    {
+      path: '/lighthouse',
+      name: 'lighthouse',
+      component: LighthouseView
+    },
+    {
+      path: '/more',
+      name: 'more',
+      component: MoreToolsView
     }
   ]
 })

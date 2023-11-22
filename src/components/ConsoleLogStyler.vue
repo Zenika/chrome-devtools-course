@@ -8,7 +8,7 @@ const selectedFontSize = ref('16')
 
 const codeSnippet = computed(
   () =>
-    `console.log(\n'  %cJe suis trop stylé 😎',\n  'color: ${selectedColor.value}; font-family: monospace; font-size: ${selectedFontSize.value}px; font-weight: bold'\n)`
+    `console.log(\n  '%cJe suis trop stylé 😎',\n  'color: ${selectedColor.value}; font-family: monospace; font-size: ${selectedFontSize.value}px; font-weight: bold'\n)`
 )
 
 const printWithStyle = () => {
