@@ -2,13 +2,13 @@
   <header>
     <h1 class="text-center">CLICK DROIT <span class="arrow">➞</span> INSPECTER</h1>
     <h2 class="text-center secondary-color">
-      <span class="inline-block left">🔪</span> Un couteau suisse bien rempli
-      <span class="inline-block right">🔪</span>
+      <span class="knife left">🔪</span> Un couteau suisse bien rempli
+      <span class="knife right">🔪</span>
     </h2>
   </header>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   margin-bottom: 50px;
 }
@@ -18,11 +18,16 @@ header {
   transform: translateY(-6px);
 }
 
-.left {
-  transform: rotate(-95deg);
-}
+.knife {
+  transform: scale(1.5);
+  display: inline-block;
 
-.right {
-  transform: rotate(95deg) rotateY(180deg);
+  &.left {
+    transform: rotate(-95deg);
+  }
+
+  &.right {
+    transform: rotate(95deg) rotateY(180deg);
+  }
 }
 </style>

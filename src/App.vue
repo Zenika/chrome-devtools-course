@@ -6,7 +6,7 @@ import AppNav from '@/components/AppNav.vue'
 
 <template>
   <AppHeader />
-  <div id="app-content">
+  <div class="flex">
     <AppNav />
     <main>
       <RouterView />
@@ -15,7 +15,7 @@ import AppNav from '@/components/AppNav.vue'
 </template>
 
 <style scoped>
-#app-content {
-  display: flex;
+main {
+  padding: 1rem 0;
 }
 </style>

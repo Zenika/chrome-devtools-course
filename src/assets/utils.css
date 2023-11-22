@@ -2,10 +2,10 @@
   text-align: center;
 }
 
-.inline-block {
-  display: inline-block;
-}
-
 .secondary-color {
   color: var(--color-secondary);
+}
+
+.flex {
+  display: flex;
 }
