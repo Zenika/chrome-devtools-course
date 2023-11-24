@@ -21,7 +21,6 @@ import { RouterLink } from 'vue-router'
 <style scoped>
 .wrapper {
   max-width: 280px;
-  margin-right: 32px;
 }
 
 nav {
@@ -50,6 +49,5 @@ nav a.router-link-exact-active:hover {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  //border-left: 1px solid var(--color-border);
 }
 </style>

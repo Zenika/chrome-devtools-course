@@ -1,5 +1,5 @@
 @import './base.css';
-@import "./utils.css";
+@import './utils.css';
 
 @font-face {
   font-family: 'Press Start 2P';
@@ -9,7 +9,7 @@
 #app {
   width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 0;
 
   font-weight: normal;
 }
@@ -22,6 +22,6 @@ a {
 
 @media (hover: hover) {
   a:hover {
-    background-color: rgba(194,88,114, 0.1);
+    background-color: rgba(194, 88, 114, 0.1);
   }
 }

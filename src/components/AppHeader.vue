@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <h1 class="text-center">CLICK DROIT <span class="arrow">➞</span> INSPECTER</h1>
     <h2 class="text-center secondary-color">
       <span class="knife left">🔪</span> Un couteau suisse bien rempli

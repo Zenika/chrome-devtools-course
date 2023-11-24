@@ -16,6 +16,6 @@ import AppNav from '@/components/AppNav.vue'
 
 <style scoped>
 main {
-  padding: 1rem 0;
+  padding: 1rem;
 }
 </style>
