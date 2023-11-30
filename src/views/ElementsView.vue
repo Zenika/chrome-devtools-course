@@ -25,6 +25,10 @@
     <li>
       <p>command + shift + P / ctrl + shift + P : la boite à outils</p>
     </li>
+    <li>
+      <!-- You need to enable Font Editor tool experiment -->
+      <p>CSS Font editor: pour ne plus passer 3h à ajuster la police</p>
+    </li>
   </ul>
 </template>
 
@@ -54,4 +58,5 @@
   }
 }
 </style>
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
