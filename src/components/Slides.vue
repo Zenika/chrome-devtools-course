@@ -11,20 +11,20 @@ const slideContents = slots.default()
 const totalSlides = computed(() => slideContents.length);
 
 const nextSlide = () => {
-  currentSlide.value = (currentSlide.value + 1) % totalSlides.value
+  currentSlide.value = currentSlide.value < totalSlides.value - 1 ? (currentSlide.value + 1) : currentSlide.value
 };
 
 const prevSlide = () => {
-  currentSlide.value = (currentSlide.value + totalSlides.value - 1) % totalSlides.value
+  currentSlide.value = (currentSlide.value > 0) ? currentSlide.value - 1 : 0
 };
 
-const onKeyPressListener = (event: KeyboardEvent) => {
+function onKeyPressListener(event: KeyboardEvent) {
   if (event.key === 'ArrowLeft') {
     prevSlide();
   } else if (event.key === 'ArrowRight') {
     nextSlide();
   }
-};
+}
 
 onMounted(() => {
   window.addEventListener('keydown', onKeyPressListener);
@@ -39,9 +39,9 @@ onUnmounted(() => {
     <component :is="slots.default()[currentSlide]"/>
   </ul>
   <div class="badges">
-    <button class="left" @click="prevSlide">←</button>
+    <button class="left" @click="prevSlide" :class="{invisible: currentSlide === 0}">←</button>
     <span v-for="(_, i) in slideContents" :class="i === currentSlide ? 'badge active' : 'badge'"></span>
-    <button class="right" @click="nextSlide">→</button>
+    <button class="right" @click="nextSlide" :class="{invisible: currentSlide === totalSlides - 1}">→</button>
   </div>
 </template>
 
@@ -91,6 +91,11 @@ ul {
 
     &:hover {
       background-color: #eee;
+    }
+
+    &.invisible {
+      opacity: 0;
+      cursor: none;
     }
 
     &.left {
