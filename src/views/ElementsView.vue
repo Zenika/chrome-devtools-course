@@ -1,15 +1,15 @@
 <template>
-  <ul>
-    <li>
+  <Slides>
+    <Slide>
       <p>Présentation générale.</p>
-    </li>
-    <li>
+    </Slide>
+    <Slide>
       <p>Comment obtenir un screenshot d'une partie du DOM.</p>
-    </li>
-    <li class="list-element">
+    </Slide>
+    <Slide class="list-element">
       <p>$0, $$($1)... quoi du jQuery dans les DevTools ???</p>
-    </li>
-    <li>
+    </Slide>
+    <Slide>
       <p>CSS Flex vs CSS Grid.</p>
       <div class="flex-container">
         <div class="block">1</div>
@@ -21,18 +21,22 @@
         <div class="block two">2</div>
         <div class="block three">3</div>
       </div>
-    </li>
-    <li>
+    </Slide>
+    <Slide>
       <p>command + shift + P / ctrl + shift + P : la boite à outils</p>
-    </li>
-    <li>
+    </Slide>
+    <Slide>
       <!-- You need to enable Font Editor tool experiment -->
       <p>CSS Font editor: pour ne plus passer 3h à ajuster la police</p>
-    </li>
-  </ul>
+    </Slide>
+  </Slides>
 </template>
 
 <style scoped lang="scss">
+
+li {
+  list-style: none;
+}
 .block {
   padding: 4px 40px;
   display: inline-block;
@@ -59,4 +63,6 @@
 }
 </style>
 <script setup lang="ts">
+import Slides from "@/components/Slides.vue";
+import Slide from "@/components/Slide.vue";
 </script>

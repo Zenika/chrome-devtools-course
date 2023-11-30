@@ -29,4 +29,7 @@ const planets = {
 .margin-right {
   margin-right: 24px;
 }
+pre {
+  font-size: 0.6em;
+}
 </style>

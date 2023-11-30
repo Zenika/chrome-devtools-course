@@ -11,6 +11,7 @@
 <style scoped lang="scss">
 header {
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .arrow {

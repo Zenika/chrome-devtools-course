@@ -6,8 +6,17 @@
   src: url(PressStart2P-Regular.ttf);
 }
 
+@font-face {
+  font-family: 'Robot';
+  src: url(Roboto-Medium.ttf);
+}
+
 #app {
+  display: flex;
+  flex-direction: column;
   width: 1280px;
+  max-height: 100vh;
+  height: 100vh;
   margin: 0 auto;
   padding: 2rem 2rem 2rem 0;
 

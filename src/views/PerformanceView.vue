@@ -1,11 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Slides from "@/components/Slides.vue";
+import Slide from "@/components/Slide.vue";
+</script>
 
 <template>
-  <ul>
-    <li>CPU Throttling, mayday je n'ai plus de puissance.</li>
-    <li>Animation tracking.</li>
-    <li>CLS : Cumulative Layout Shift</li>
-  </ul>
+  <Slides>
+    <Slide>CPU Throttling, mayday je n'ai plus de puissance.</Slide>
+    <Slide>Animation tracking.</Slide>
+    <Slide>CLS : Cumulative Layout Shift</Slide>
+  </Slides>
 </template>
 
 <style scoped lang="scss"></style>

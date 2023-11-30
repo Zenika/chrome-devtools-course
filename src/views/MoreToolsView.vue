@@ -1,12 +1,15 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import Slides from "@/components/Slides.vue";
+import Slide from "@/components/Slide.vue";
+</script>
 
 <template>
-  <ul>
-    <li>Animations</li>
-    <li>Rendering</li>
-    <li>Performance monitor</li>
-    <li>Coverage CSS</li>
-  </ul>
+  <Slides>
+    <Slide>Animations</Slide>
+    <Slide>Rendering</Slide>
+    <Slide>Performance monitor</Slide>
+    <Slide>Coverage CSS</Slide>
+  </Slides>
 </template>
 
 <style scoped lang="scss"></style>

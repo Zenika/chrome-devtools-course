@@ -17,5 +17,18 @@ import AppNav from '@/components/AppNav.vue'
 <style scoped>
 main {
   padding: 1rem;
+  width: 100%;
+  height: 100%;
+  font-family: Robot;
+  font-size: 1.5em;
 }
+
+.flex {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
 </style>
