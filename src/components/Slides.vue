@@ -1,55 +1,49 @@
-<script lang="ts">
-import {computed, defineComponent, h, onMounted, onUnmounted, ref} from 'vue';
+<script setup lang="ts">
+import {computed, onMounted, onUnmounted, ref} from 'vue';
+import Slide from "@/components/Slide.vue";
 
-export default defineComponent({
-  setup(_, {slots}) {
-    const currentSlide = ref(0);
+const slots = defineSlots<{ default(): typeof Slide[] }>()
 
-    const slideContents = ref(slots.default?.() ?? [])
+const currentSlide = ref(0);
 
-    const totalSlides = computed(() => slideContents.value.length);
+const slideContents = slots.default()
 
-    const nextSlide = () => {
-      currentSlide.value = (currentSlide.value + 1) % totalSlides.value
-    };
+const totalSlides = computed(() => slideContents.length);
 
-    const prevSlide = () => {
-      currentSlide.value = (currentSlide.value + totalSlides.value - 1) % totalSlides.value
-    };
+const nextSlide = () => {
+  currentSlide.value = (currentSlide.value + 1) % totalSlides.value
+};
 
-    const onKeyPressListener = (event: KeyboardEvent) => {
-      if (event.key === 'ArrowLeft') {
-        prevSlide();
-      } else if (event.key === 'ArrowRight') {
-        nextSlide();
-      }
-    };
+const prevSlide = () => {
+  currentSlide.value = (currentSlide.value + totalSlides.value - 1) % totalSlides.value
+};
 
-    onMounted(() => {
-      window.addEventListener('keydown', onKeyPressListener);
-    });
-
-    onUnmounted(() => {
-      window.removeEventListener('keydown', onKeyPressListener);
-    });
-
-    return () => [
-      h("ul", slideContents.value?.[currentSlide.value]),
-      h('div', {class: 'badges'}, [
-        h('button', {
-          class: 'left',
-          onClick: prevSlide
-        }, "←"),
-        ...slideContents.value.map((_, i) => h('span', {class: i === currentSlide.value ? 'badge active' : 'badge'})),
-        h('button', {
-          class: 'right',
-          onClick: nextSlide
-        }, "→")
-      ]),
-    ]
+const onKeyPressListener = (event: KeyboardEvent) => {
+  if (event.key === 'ArrowLeft') {
+    prevSlide();
+  } else if (event.key === 'ArrowRight') {
+    nextSlide();
   }
+};
+
+onMounted(() => {
+  window.addEventListener('keydown', onKeyPressListener);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', onKeyPressListener);
 });
 </script>
+<template>
+  <ul>
+    <component :is="slots.default()[currentSlide]"/>
+  </ul>
+  <div class="badges">
+    <button class="left" @click="prevSlide">←</button>
+    <span v-for="(_, i) in slideContents" :class="i === currentSlide ? 'badge active' : 'badge'"></span>
+    <button class="right" @click="nextSlide">→</button>
+  </div>
+</template>
 
 <style scoped lang="scss">
 
