@@ -48,6 +48,8 @@ onUnmounted(() => {
 <style scoped lang="scss">
 
 ul {
+  margin: 0;
+  padding: 0;
   height: calc(100% - 60px);
   width: 100%;
   display: flex;
