@@ -27,7 +27,7 @@ const onClickApiButton = async (): Promise<void> => {
 
 <template>
   <Slides>
-    <Slide>
+    <Slide class="flex-column align-center">
       <p>Plus besoin de console.log dans le code 😎</p>
       <div class="button-wrapper">
         <PixelButton text="Run" :action="sumNumbers" />
@@ -56,13 +56,15 @@ const onClickApiButton = async (): Promise<void> => {
 </template>
 
 <style scoped lang="scss">
+
 .button-wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 10px 0;
+  margin: 15px 0;
 
   & .pixel-btn {
-    margin-right: 16px;
+    margin-bottom: 15px;
   }
 }
 </style>

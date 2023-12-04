@@ -64,5 +64,7 @@ const onRangeChange = (event: Event) => {
 
 pre {
   margin-bottom: 16px;
+  font-size: 0.6em;
 }
+
 </style>

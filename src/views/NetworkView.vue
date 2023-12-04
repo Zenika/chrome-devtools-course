@@ -7,7 +7,7 @@ import Slide from "@/components/Slide.vue";
 
 <template>
   <Slides>
-    <Slide>
+    <Slide class="flex-column align-center">
       <p>Network Throttling, le retour au réseau Edge.</p>
       <PixelButton text="API call" :action="getBeers" />
     </Slide>
@@ -17,6 +17,6 @@ import Slide from "@/components/Slide.vue";
 
 <style scoped lang="scss">
 .pixel-btn {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 </style>

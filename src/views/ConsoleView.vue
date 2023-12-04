@@ -16,7 +16,7 @@ import Slide from "@/components/Slide.vue";
         <code class="javascript code-snippet">inspect(document.querySelector('header'))</code>
       </pre>
     </Slide>
-    <Slide><ConsoleTable /></Slide>
+    <Slide class="flex-column align-center"><ConsoleTable  /></Slide>
     <Slide><ConsoleLogStyler /></Slide>
   </Slides>
 </template>
