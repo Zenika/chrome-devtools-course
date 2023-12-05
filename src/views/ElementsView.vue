@@ -1,9 +1,6 @@
 <template>
   <Slides>
     <Slide>
-      <p>Présentation générale.</p>
-    </Slide>
-    <Slide>
       <p>Comment obtenir un screenshot d'une partie du DOM.</p>
     </Slide>
     <Slide class="list-element">
@@ -22,12 +19,14 @@
         <div class="block three">3</div>
       </div>
     </Slide>
-    <Slide>
-      <p>command + shift + P / ctrl + shift + P : la boite à outils</p>
+    <Slide class="flex-column align-center">
+      <p>⌘ + ⇧ + P / ⌃ + ⇧ + P : la boite à outils</p>
+      <img src="../assets/img/command-menu.png" alt="Command menu">
     </Slide>
-    <Slide>
+    <Slide class="text-center">
       <!-- You need to enable Font Editor tool experiment -->
-      <p>CSS Font editor: pour ne plus passer 3h à ajuster la police</p>
+      <p>CSS Font editor</p>
+      <p>pour ne plus passer 3h à ajuster la police</p>
     </Slide>
     <Slide class="text-center">
       <p>Pick your color</p>
@@ -40,6 +39,10 @@
         <div class="color orange"></div>
         <div class="color purple"></div>
       </div>
+    </Slide>
+    <Slide class="flex-column align-center">
+      <p>Surveille ton DOM: <code>monitorEvents(el)</code></p>
+      <img src="../assets/img/monitor-events.png" alt="Monitor event">
     </Slide>
   </Slides>
 </template>
@@ -106,6 +109,11 @@ li {
       background-color: #8E44AD;
     }
   }
+}
+
+
+img {
+  margin-top: 15px;
 }
 
 </style>
