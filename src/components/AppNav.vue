@@ -44,7 +44,6 @@ onUnmounted(() => {
       <RouterLink :ref="el => links.push(el)" to="/sources" class="router-link">Sources</RouterLink>
       <RouterLink :ref="el => links.push(el)" to="/network" class="router-link">Network</RouterLink>
       <RouterLink :ref="el => links.push(el)" to="/performance" class="router-link">Performance</RouterLink>
-      <RouterLink :ref="el => links.push(el)" to="/application" class="router-link">Application</RouterLink>
       <RouterLink :ref="el => links.push(el)" to="/lighthouse" class="router-link">Lighthouse</RouterLink>
       <RouterLink :ref="el => links.push(el)" to="/more" class="router-link">More Tools</RouterLink>
     </nav>
