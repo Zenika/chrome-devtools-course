@@ -8,10 +8,10 @@ import Slide from "@/components/Slide.vue";
 <template>
   <Slides>
     <Slide>
-      <p>command + option + J / ctrl + shift + J.</p>
+      <p>⌘ + ⌥ + J / ⌃ + ⇧ + J</p>
     </Slide>
     <Slide class="text-center">
-      <p>Fonction inspect(mySelector), le ctrl + F like.</p>
+      <p>Fonction <code>inspect(mySelector)</code>, le ctrl + F like.</p>
       <pre v-highlightjs>
         <code class="javascript code-snippet">inspect(document.querySelector('header'))</code>
       </pre>

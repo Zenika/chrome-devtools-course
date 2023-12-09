@@ -8,6 +8,7 @@
 
 .slide {
   list-style: none;
+  margin-bottom: 0;
 }
 
 </style>

@@ -20,7 +20,7 @@
       </div>
     </Slide>
     <Slide class="flex-column align-center">
-      <p>⌘ + ⇧ + P / ⌃ + ⇧ + P : la boite à outils</p>
+      <p><code>⌘ + ⇧ + P / ⌃ + ⇧ + P</code> : la boite à outils</p>
       <img src="../assets/img/command-menu.png" alt="Command menu">
     </Slide>
     <Slide class="text-center">
