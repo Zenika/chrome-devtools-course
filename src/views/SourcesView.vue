@@ -35,11 +35,13 @@ const sumNumbers = (): void => {
       <p><code>debugger</code>, c'est quoi cette commande Javascript ?</p>
     </Slide>
 
-    <Slide>
+    <Slide class="text-center">
       <p>Chrome Devtools remplace mon IDE ?</p>
+      <img src="../assets/img/editor.png" alt="Editor">
     </Slide>
-    <Slide>
+    <Slide class="text-center">
       <p>Snippets, petits mais costauds.</p>
+      <img src="../assets/img/snippet.png" alt="Snippet">
     </Slide>
     <Slide class="flex-column align-center">
       <p>Mais comment inspecter un élément au survol ??</p>
@@ -91,5 +93,9 @@ const sumNumbers = (): void => {
     opacity: 1;
   }
 
+}
+
+img {
+  margin-top: 15px;
 }
 </style>

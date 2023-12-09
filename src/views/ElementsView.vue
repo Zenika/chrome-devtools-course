@@ -63,6 +63,7 @@ li {
 
 .flex-container {
   margin-block: 20px;
+  width: 980px;
 
   .block {
     background-color: var(--color-secondary);
@@ -70,6 +71,7 @@ li {
 }
 
 .grid-container {
+  width: 980px;
   grid-template-columns: 100px 200px 100px;
   grid-template-rows: repeat(3, 50px);
 

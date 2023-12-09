@@ -5,8 +5,17 @@ import Slide from "@/components/Slide.vue";
 
 <template>
   <Slides>
-    <Slide>Rapport SEO</Slide>
+    <Slide class="text-center">
+      <p>Rapport SEO</p>
+      <img src="../assets/img/lighthouse.png" alt="Lighthouse">
+    </Slide>
   </Slides>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+img {
+  margin-top: 25px;
+}
+
+</style>
