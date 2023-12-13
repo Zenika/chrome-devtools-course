@@ -1,52 +1,61 @@
 <script setup lang="ts">
-import {computed, onMounted, onUnmounted, ref} from 'vue';
-import Slide from "@/components/Slide.vue";
+import { computed, onMounted, onUnmounted, ref } from 'vue'
+import Slide from '@/components/Slide.vue'
 
-const slots = defineSlots<{ default(): typeof Slide[] }>()
+const slots = defineSlots<{ default(): (typeof Slide)[] }>()
 
-const currentSlide = ref(0);
+const currentSlide = ref(0)
 
 const slideContents = slots.default()
 
-const totalSlides = computed(() => slideContents.length);
+const totalSlides = computed(() => slideContents.length)
 
 const nextSlide = () => {
-  currentSlide.value = currentSlide.value < totalSlides.value - 1 ? (currentSlide.value + 1) : currentSlide.value
-};
+  currentSlide.value =
+    currentSlide.value < totalSlides.value - 1 ? currentSlide.value + 1 : currentSlide.value
+}
 
 const prevSlide = () => {
-  currentSlide.value = (currentSlide.value > 0) ? currentSlide.value - 1 : 0
-};
+  currentSlide.value = currentSlide.value > 0 ? currentSlide.value - 1 : 0
+}
 
 function onKeyPressListener(event: KeyboardEvent) {
   if (event.key === 'ArrowLeft') {
-    prevSlide();
+    prevSlide()
   } else if (event.key === 'ArrowRight') {
-    nextSlide();
+    nextSlide()
   }
 }
 
 onMounted(() => {
-  window.addEventListener('keydown', onKeyPressListener);
-});
+  window.addEventListener('keydown', onKeyPressListener)
+})
 
 onUnmounted(() => {
-  window.removeEventListener('keydown', onKeyPressListener);
-});
+  window.removeEventListener('keydown', onKeyPressListener)
+})
 </script>
 <template>
   <ul>
-    <component :is="slots.default()[currentSlide]"/>
+    <component :is="slots.default()[currentSlide]" />
   </ul>
   <div class="badges">
-    <button class="left" @click="prevSlide" :class="{invisible: currentSlide === 0}">←</button>
-    <span v-for="(_, i) in slideContents" :class="i === currentSlide ? 'badge active' : 'badge'"></span>
-    <button class="right" @click="nextSlide" :class="{invisible: currentSlide === totalSlides - 1}">→</button>
+    <button class="left" @click="prevSlide" :class="{ invisible: currentSlide === 0 }">←</button>
+    <span
+      v-for="(_, i) in slideContents"
+      :class="i === currentSlide ? 'badge active' : 'badge'"
+    ></span>
+    <button
+      class="right"
+      @click="nextSlide"
+      :class="{ invisible: currentSlide === totalSlides - 1 }"
+    >
+      →
+    </button>
   </div>
 </template>
 
 <style scoped lang="scss">
-
 ul {
   margin: 0;
   padding: 0;
@@ -79,7 +88,6 @@ ul {
     }
   }
 
-
   button {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -109,8 +117,6 @@ ul {
       margin-left: 15px;
       margin-right: 0;
     }
-
   }
-
 }
 </style>

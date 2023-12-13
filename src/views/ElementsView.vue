@@ -21,7 +21,7 @@
     </Slide>
     <Slide class="flex-column align-center">
       <p><code>⌘ + ⇧ + P / ⌃ + ⇧ + P</code> : la boite à outils</p>
-      <img src="../assets/img/command-menu.png" alt="Command menu">
+      <img src="../assets/img/command-menu.png" alt="Command menu" />
     </Slide>
     <Slide class="text-center">
       <!-- You need to enable Font Editor tool experiment -->
@@ -42,13 +42,12 @@
     </Slide>
     <Slide class="flex-column align-center">
       <p>Surveille ton DOM: <code>monitorEvents(el)</code></p>
-      <img src="../assets/img/monitor-events.png" alt="Monitor event">
+      <img src="../assets/img/monitor-events.png" alt="Monitor event" />
     </Slide>
   </Slides>
 </template>
 
 <style scoped lang="scss">
-
 li {
   list-style: none;
 }
@@ -96,30 +95,28 @@ li {
       background-color: var(--color-secondary);
     }
     &.blue {
-      background-color: #5A7D9A;
+      background-color: #5a7d9a;
     }
     &.green {
       background-color: #29bb8e;
     }
     &.yellow {
-      background-color: #F4D03F;
+      background-color: #f4d03f;
     }
     &.orange {
-      background-color: #F5B041;
+      background-color: #f5b041;
     }
     &.purple {
-      background-color: #8E44AD;
+      background-color: #8e44ad;
     }
   }
 }
 
-
 img {
   margin-top: 15px;
 }
-
 </style>
 <script setup lang="ts">
-import Slides from "@/components/Slides.vue";
-import Slide from "@/components/Slide.vue";
+import Slides from '@/components/Slides.vue'
+import Slide from '@/components/Slide.vue'
 </script>

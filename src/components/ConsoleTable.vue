@@ -22,8 +22,8 @@ const planets = {
     <code class="javascript code-snippet">{{ `const planets = {\n  tatooine: 'sand',\n  hot: 'ice',\n  kashyyyk: 'forest'\n}\nconsole.table(planets)` }}</code>
   </pre>
   <div class="flex align-center">
-  <PixelButton class="margin-right" text="Log array" @click="() => console.table(characters)" />
-  <PixelButton text="Log object" @click="() => console.table(planets)" />
+    <PixelButton class="margin-right" text="Log array" @click="() => console.table(characters)" />
+    <PixelButton text="Log object" @click="() => console.table(planets)" />
   </div>
 </template>
 

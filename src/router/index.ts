@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import ElementsView from '@/views/ElementsView.vue'
 import ConsoleView from '@/views/ConsoleView.vue'
 import HomeView from '@/views/HomeView.vue'
@@ -9,49 +9,49 @@ import LighthouseView from '@/views/LighthouseView.vue'
 import MoreToolsView from '@/views/MoreToolsView.vue'
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-        {
-            path: '/',
-            name: 'home',
-            component: HomeView
-        },
-        {
-            path: '/elements',
-            name: 'elements',
-            component: ElementsView
-        },
-        {
-            path: '/console',
-            name: 'console',
-            component: ConsoleView
-        },
-        {
-            path: '/sources',
-            name: 'sources',
-            component: SourcesView
-        },
-        {
-            path: '/network',
-            name: 'network',
-            component: NetworkView
-        },
-        {
-            path: '/performance',
-            name: 'performance',
-            component: PerformanceView
-        },
-        {
-            path: '/lighthouse',
-            name: 'lighthouse',
-            component: LighthouseView
-        },
-        {
-            path: '/more',
-            name: 'more',
-            component: MoreToolsView
-        }
-    ]
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: HomeView
+    },
+    {
+      path: '/elements',
+      name: 'elements',
+      component: ElementsView
+    },
+    {
+      path: '/console',
+      name: 'console',
+      component: ConsoleView
+    },
+    {
+      path: '/sources',
+      name: 'sources',
+      component: SourcesView
+    },
+    {
+      path: '/network',
+      name: 'network',
+      component: NetworkView
+    },
+    {
+      path: '/performance',
+      name: 'performance',
+      component: PerformanceView
+    },
+    {
+      path: '/lighthouse',
+      name: 'lighthouse',
+      component: LighthouseView
+    },
+    {
+      path: '/more',
+      name: 'more',
+      component: MoreToolsView
+    }
+  ]
 })
 
 export default router

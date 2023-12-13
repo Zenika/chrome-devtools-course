@@ -1,25 +1,22 @@
 <script setup lang="ts">
 import PixelButton from '@/components/PixelButton.vue'
-import {ref} from 'vue'
-import Slides from "@/components/Slides.vue";
-import Slide from "@/components/Slide.vue";
+import { ref } from 'vue'
+import Slides from '@/components/Slides.vue'
+import Slide from '@/components/Slide.vue'
 
 const sumText = ref('')
-
 
 const getRandomNumber = (): number => Math.floor(Math.random() * 100)
 
 const sumNumbers = (): void => {
   const numberOne = getRandomNumber()
-  console.log({numberOne})
+  console.log({ numberOne })
   const numberTwo = getRandomNumber()
-  console.log({numberTwo})
+  console.log({ numberTwo })
   const sum = numberOne + numberTwo
-  console.log({sum})
+  console.log({ sum })
   sumText.value = `${numberOne} + ${numberTwo} = ${sum}`
 }
-
-
 </script>
 
 <template>
@@ -27,7 +24,7 @@ const sumNumbers = (): void => {
     <Slide class="flex-column align-center">
       <p>Plus besoin de console.log dans le code 😎</p>
       <div class="button-wrapper">
-        <PixelButton text="Run" :action="sumNumbers"/>
+        <PixelButton text="Run" :action="sumNumbers" />
         <span class="text">{{ sumText }}</span>
       </div>
     </Slide>
@@ -37,16 +34,16 @@ const sumNumbers = (): void => {
 
     <Slide class="text-center">
       <p>Chrome Devtools remplace mon IDE ?</p>
-      <img src="../assets/img/editor.png" alt="Editor">
+      <img src="../assets/img/editor.png" alt="Editor" />
     </Slide>
     <Slide class="text-center">
       <p>Snippets, petits mais costauds.</p>
-      <img src="../assets/img/snippet.png" alt="Snippet">
+      <img src="../assets/img/snippet.png" alt="Snippet" />
     </Slide>
     <Slide class="flex-column align-center">
       <p>Mais comment inspecter un élément au survol ??</p>
       <article class="tooltip-container">
-        <PixelButton text="Show me"/>
+        <PixelButton text="Show me" />
         <span class="tooltip-text">Attrappe moi si tu peux</span>
       </article>
     </Slide>
@@ -54,7 +51,6 @@ const sumNumbers = (): void => {
 </template>
 
 <style scoped lang="scss">
-
 .button-wrapper {
   display: flex;
   flex-direction: column;
@@ -92,7 +88,6 @@ const sumNumbers = (): void => {
     visibility: visible;
     opacity: 1;
   }
-
 }
 
 img {

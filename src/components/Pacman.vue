@@ -123,7 +123,7 @@
 
   100% {
     box-shadow:
-      0px 65px 0 0 white,
+      0 65px 0 0 white,
       100px 65px 0 0 white,
       300px 65px 0 0 white,
       500px 65px 0 0 white,
@@ -147,7 +147,7 @@
 
   100% {
     box-shadow:
-      0px 65px 0 0 white,
+      0 65px 0 0 white,
       100px 65px 0 0 white,
       300px 65px 0 0 white,
       500px 65px 0 0 white,
@@ -171,7 +171,7 @@
 
   100% {
     box-shadow:
-      0px 65px 0 0 white,
+      0 65px 0 0 white,
       100px 65px 0 0 white,
       300px 65px 0 0 white,
       500px 65px 0 0 white,
