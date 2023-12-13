@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Slides from '@/components/Slides.vue'
 import Slide from '@/components/Slide.vue'
-import BurgerMenu from '@/components/BurgerMenu.vue'
 import { onMounted, ref } from 'vue'
 import { getBeers } from '@/libs/api'
 
