@@ -42,7 +42,7 @@ onUnmounted(() => clearInterval(interval))
     justify-content: center;
 
     i {
-      opacity: 0;
+      color: white;
       height: 0;
       width: 0;
     }

@@ -60,6 +60,9 @@ onUnmounted(() => {
       <RouterLink :ref="(el) => links.push(el)" to="/more" class="router-link"
         >More Tools</RouterLink
       >
+      <RouterLink :ref="(el) => links.push(el)" to="/resources" class="router-link"
+        >Resources</RouterLink
+      >
     </nav>
   </div>
 </template>

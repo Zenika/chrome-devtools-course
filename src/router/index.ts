@@ -7,6 +7,7 @@ import NetworkView from '@/views/NetworkView.vue'
 import PerformanceView from '@/views/PerformanceView.vue'
 import LighthouseView from '@/views/LighthouseView.vue'
 import MoreToolsView from '@/views/MoreToolsView.vue'
+import ResourcesView from "@/views/ResourcesView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -50,6 +51,11 @@ const router = createRouter({
       path: '/more',
       name: 'more',
       component: MoreToolsView
+    },
+    {
+      path: '/resources',
+      name: 'resources',
+      component: ResourcesView
     }
   ]
 })
