@@ -13,13 +13,23 @@ const planets = {
   hot: 'ice',
   kashyyyk: 'forest'
 }
+
+const runTimer = () => {
+  console.time('Process time')
+  for (let i = 0; i < 100000000; i++) {}
+  console.timeEnd('Process time')
+}
 </script>
 
 <template>
   <p class="margin-bottom">l'API console : log, warn et error ne sont pas seuls !</p>
   <pre v-highlightjs>
-    <code class="javascript code-snippet">{{ `const characters = [\n  { name: 'Darth Vader', species: 'Sith', origin: 'Tatooine' },\n  { name: 'Jar Jar Binks', species: 'Gungan', origin: 'Naboo' },\n  { name: 'Admiral Ackbar', species: 'Mon calamari', origin: 'Mon Cala' },\n  { name: 'Chewie', species: 'Wookie', origin: 'Kashyyyk' }\n}\nconsole.table(characters)` }}</code>
-    <code class="javascript code-snippet">{{ `const planets = {\n  tatooine: 'sand',\n  hot: 'ice',\n  kashyyyk: 'forest'\n}\nconsole.table(planets)` }}</code>
+    <code
+      class="javascript code-snippet">{{ `const characters = [\n  { name: 'Darth Vader', species: 'Sith', origin: 'Tatooine' },\n  { name: 'Jar Jar Binks', species: 'Gungan', origin: 'Naboo' },\n  { name: 'Admiral Ackbar', species: 'Mon calamari', origin: 'Mon Cala' },\n  { name: 'Chewie', species: 'Wookie', origin: 'Kashyyyk' }\n}\nconsole.table(characters)`
+      }}</code>
+    <code
+      class="javascript code-snippet">{{ `const planets = {\n  tatooine: 'sand',\n  hot: 'ice',\n  kashyyyk: 'forest'\n}\nconsole.table(planets)`
+      }}</code>
   </pre>
   <div class="flex align-center">
     <PixelButton class="margin-right" text="Log array" @click="() => console.table(characters)" />
@@ -31,6 +41,7 @@ const planets = {
 .margin-right {
   margin-right: 24px;
 }
+
 .margin-bottom {
   margin-bottom: 15px;
 }
@@ -43,5 +54,12 @@ pre {
   code {
     margin-bottom: 15px;
   }
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
 }
 </style>

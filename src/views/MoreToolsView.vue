@@ -9,7 +9,7 @@ import Pacman from '@/components/Pacman.vue'
 <template>
   <Slides>
     <Slide>
-      <p>Animations / Rendering</p>
+      <p>Animations</p>
       <Pacman />
     </Slide>
     <Slide class="text-center">
