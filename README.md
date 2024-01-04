@@ -1,46 +1,18 @@
-# click droit -> inspecter
+# Click droit ➞ inspecter
+## 🔪 Un couteau suisse bien rempli 🔪
 
-This template should help get you started developing with Vue 3 in Vite.
+Mais pourquoi autant de DevTools quand seulement quelques-uns me suffisent ?
 
-## Recommended IDE Setup
+Une énième mise à jour de Chrome et son lot de DevTools qui va avec. Des outils encore jamais utilisés ou inutiles dans mon projet ? Des onglets avec des graph et des tableaux incompréhensibles… Autant de fonctionnalités farfelues, mais qui, une fois maitrisées, pourront changer votre vision du développement front.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+A travers ce tutoriel, nous allons voir en détail comment améliorer votre expérience développeur avec Chrome DevTools. Vous découvrirez des fonctionnalités que vous pourrez utiliser au quotidien avec efficacité. Apprenez à jouer avec la console de développeur pour mettre l’application dans tous ses états !
 
-## Type Support for `.vue` Imports in TS
+Nous verrons comment fonctionnent les onglets les moins utilisés comme Performance. Nous ferons un tour du côté de lighthouse pour un SEO optimal. Nous rentrerons dans le détail pour ceux que vous connaissez déjà : debug, fichiers source, breakpoints ou encore réseau.
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+### Installation
 
 ```sh
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
 npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
