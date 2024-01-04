@@ -22,7 +22,9 @@ import Slide from '@/components/Slide.vue'
         A travers ce tutoriel, nous allons voir en détail comment améliorer votre expérience
         développeur avec Chrome DevTools
       </p>
-      <p>Vous découvrirez des fonctionnalités que pourrez utiliser au quotidien avec efficacité.</p>
+      <p>
+        Vous découvrirez des fonctionnalités que vous pourrez utiliser au quotidien avec efficacité.
+      </p>
       <p>
         Apprenez à jouer avec la console de développeur pour mettre l’application dans tous ses
         états !
@@ -43,6 +45,7 @@ import Slide from '@/components/Slide.vue'
 div {
   padding: 0 40px;
 }
+
 p {
   margin-bottom: 20px;
   text-align: center;
